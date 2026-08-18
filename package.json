@@ -1,0 +1,19 @@
+{
+  "name": "country-state-city-ui",
+  "version": "1.0.0",
+  "description": "Web UI for Country State City API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["country", "state", "city", "api"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3"
+  }
+}

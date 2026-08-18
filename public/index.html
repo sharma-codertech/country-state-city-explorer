@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country State City Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌍 Country State City Explorer</h1>
+      <p>Explore countries, states, and cities worldwide</p>
+    </header>
+
+    <main class="main-layout">
+      <!-- Left Panel: Selection -->
+      <div class="left-panel">
+        <h2>Select Location</h2>
+        
+        <div class="card">
+          <div class="form-group">
+            <label for="countrySelect">Country:</label>
+            <select id="countrySelect">
+              <option value="">-- Loading Countries --</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="card" id="statesCard" style="display: none;">
+          <div class="form-group">
+            <label for="stateSelect">State/Region:</label>
+            <select id="stateSelect">
+              <option value="">-- Select a State --</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="card" id="citiesCard" style="display: none;">
+          <div class="form-group">
+            <label for="citySelect">City:</label>
+            <select id="citySelect">
+              <option value="">-- Select a City --</option>
+            </select>
+          </div>
+        </div>
+
+        <button id="resetBtn" class="btn btn-reset">Reset Selection</button>
+      </div>
+
+      <!-- Right Panel: Output -->
+      <div class="right-panel">
+        <div class="card" id="infoCard" style="display: none;">
+          <h3>📍 Selected Location</h3>
+          <div class="info-display">
+            <div class="info-item">
+              <span class="info-label">Country:</span>
+              <span class="info-value" id="selectedCountry">-</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">State:</span>
+              <span class="info-value" id="selectedState">-</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">City:</span>
+              <span class="info-value" id="selectedCity">-</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card empty-state" id="emptyState">
+          <div class="empty-content">
+            <h3>👈 Start Selecting</h3>
+            <p>Choose a country from the left panel to begin exploring</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>Data powered by <a href="https://countrystatecity.in/" target="_blank">Country State City API</a></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

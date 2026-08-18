@@ -1,0 +1,95 @@
+{
+  "info": {
+    "name": "Country State City API",
+    "description": "Collection for countrystatecity.in API - fetch countries, states, and cities (e.g. Yavatmal under Maharashtra, India).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      { "key": "key", "value": "X-CSCAPI-KEY", "type": "string" },
+      { "key": "value", "value": "{{api_key}}", "type": "string" },
+      { "key": "in", "value": "header", "type": "string" }
+    ]
+  },
+  "variable": [
+    { "key": "base_url", "value": "https://api.countrystatecity.in/v1" },
+    { "key": "api_key", "value": "0eae5194642eb8a18b11fa108f9b08eefe50df3db83b899f916968df25644c9a" },
+    { "key": "country_code", "value": "IN" },
+    { "key": "state_code", "value": "MH" }
+  ],
+  "item": [
+    {
+      "name": "Get All Countries",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/countries",
+          "host": ["{{base_url}}"],
+          "path": ["countries"]
+        }
+      }
+    },
+    {
+      "name": "Get Single Country (India)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/countries/{{country_code}}",
+          "host": ["{{base_url}}"],
+          "path": ["countries", "{{country_code}}"]
+        }
+      }
+    },
+    {
+      "name": "Get States of a Country (India)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/countries/{{country_code}}/states",
+          "host": ["{{base_url}}"],
+          "path": ["countries", "{{country_code}}", "states"]
+        }
+      }
+    },
+    {
+      "name": "Get Single State (Maharashtra)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/countries/{{country_code}}/states/{{state_code}}",
+          "host": ["{{base_url}}"],
+          "path": ["countries", "{{country_code}}", "states", "{{state_code}}"]
+        }
+      }
+    },
+    {
+      "name": "Get Cities of a State (Maharashtra incl. Yavatmal)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/countries/{{country_code}}/states/{{state_code}}/cities",
+          "host": ["{{base_url}}"],
+          "path": ["countries", "{{country_code}}", "states", "{{state_code}}", "cities"]
+        }
+      }
+    },
+    {
+      "name": "Get All Cities of a Country (India)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/countries/{{country_code}}/cities",
+          "host": ["{{base_url}}"],
+          "path": ["countries", "{{country_code}}", "cities"]
+        }
+      }
+    }
+  ]
+}
