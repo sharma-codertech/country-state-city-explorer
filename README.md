@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Country State City Web UI
 
 A beautiful interactive web UI to explore countries, states, and cities using the Country State City API.
@@ -64,7 +63,7 @@ http://localhost:3000
 
 Here's what the web UI looks like in action:
 
-![Country State City Explorer UI](Output.png)
+![Country State City Explorer UI](https://github.com/sharma-codertech/country-state-city-explorer/raw/master/Output.png)
 
 ## How to Use
 
