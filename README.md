@@ -60,6 +60,12 @@ Open your web browser and navigate to:
 http://localhost:3000
 ```
 
+## 📸 Application Output
+
+Here's what the web UI looks like in action:
+
+![Country State City Explorer UI](Output.png)
+
 ## How to Use
 
 1. **Select a Country** - Choose from the dropdown list of all countries
