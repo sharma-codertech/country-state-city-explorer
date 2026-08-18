@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Country State City Web UI
 
 A beautiful interactive web UI to explore countries, states, and cities using the Country State City API.
